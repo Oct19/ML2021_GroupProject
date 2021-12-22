@@ -1,5 +1,9 @@
-# User defined
+# Datasets
+datasets/stanford_cars/cars_test
+datasets/stanford_cars/cars_train
 
+# Trained networks
+*.pth
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -92,6 +96,7 @@ celerybeat-schedule
 # Environments
 .env
 .venv
+.virtenv
 env/
 venv/
 ENV/

@@ -1,45 +1,3 @@
-# ML2021_GroupProject
-
-- 蔡定坤 BY2110227
-- 郭晨旭 SY2102509
-- 郭志鹏 SY2141107
-- 任海英 BZ2006104
-- 王健宇 SY2106106
-
-## Client reg_info
-
-sid: TEAM_6
-name: 深度不学习
-token: sdbxx1234
-
-## How to use
-
-1. 数据集（cars_train, cars_test）两个文件夹放在datasets/stanford_cars目录下
-2. 运行train.py / 或者把已经训练好的checkpoint.pth放在当前目录
-3. 运行test.py
-4. 在result文件夹中查看test_result和test_result_eval文件
-
-## Link
-
-checkpoint.pth
-https://bhpan.buaa.edu.cn:443/link/EE2C3D55DAB215748147605EBC13F932
-有效期限：2022-01-07 23:59
-
-car datasets
-http://ai.stanford.edu/~jkrause/cars/car_dataset.html
-
-GitHub
-https://github.com/Oct19/ML2021_GroupProject
-
-网盘坚果云
-https://www.jianguoyun.com/p/DRekJhoQ6Ln_CRjbhp8E
-
-说明(by郭晨旭):原数据集没有划分验证集，我在训练集的基础上每一类取分出了6个样本用来验证。只用了剩下的数据来训练，并没有用到全体训练集来训练模型，如果全部用来训练的话，模型的性能应该还能再好一点。
-
-<h1 align="center"><img src="https://placekitten.com/800/250"/></h1>
-
-## Original README from API-Net
-
 # Learning Attentive Pairwise Interaction for Fine-Grained Classification (API-Net)
 Peiqin Zhuang, Yali Wang, Yu Qiao
 # Introduction:
@@ -70,3 +28,4 @@ Please kindly cite the following paper, if you find this code helpful in your wo
 Please feel free to contact zpq0316@163.com or {yl.wang, yu.qiao}@siat.ac.cn, if you have any questions.
 # Acknowledgement:
 Some of the codes are borrowed from [siamese-triplet](https://github.com/adambielski/siamese-triplet) and [triplet-reid-pytorch](https://github.com/CoinCheung/triplet-reid-pytorch). Many thanks to them.
+

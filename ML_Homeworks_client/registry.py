@@ -33,16 +33,15 @@ def main(ip, port, sid, token, reg_info):
 if __name__ == "__main__":
     # registry_info需要修改！！！
     # 学号, 姓名, token(密码), email
-    registry_info = ['BY3', 'GroundTruth', '123456', 'aa@qq.com']
+    registry_info = ['BY2110227', '蔡定坤', 'BY2110227', 'caidingkun@outlook.com']
     # IP 不需要修改
     ip = "115.236.52.125"
     # 端口不需要修改
     port = "4000"
     # 改成你的学号
-    sid = "BY1"
+    sid = "BY2110227"
     # 改成你的口令
-    token = "123456"
-    registry = True
+    token = "BY2110227"
     for i in range(2):
         print(registry_info)
         a = input('请确认注册信息(%d/2)，你只能注册一次！: (Y/ N)' % (i + 1))
@@ -51,9 +50,7 @@ if __name__ == "__main__":
             continue
         else:
             print('取消注册')
-            registry = False
     # time.sleep(3)
-    if registry:
-        print('注册中……')
-        # main(ip, port, sid, token, registry_info)
-        print('注册完成')
+    print('注册中……')
+    main(ip, port, sid, token, registry_info)
+    print('注册完成')

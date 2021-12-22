@@ -7,22 +7,18 @@ def show_leaderboard(rank):
                   'name' + ' ' * 10,
                   'score' + ' ' * 10,
                   'rank' + ' ' * 10))
-    team_rank = 0
     for _, line in enumerate(rank):
         sid, name, score, rank = line[0], line[1], line[2], line[3]
-        if 'TEAM' not in sid:
-            continue
         sid = sid + ' ' * (13 - len(sid))
-        name = name + ' ' * (10 - len(name))
+        name = name + ' ' * (12 - len(name))
         if type(score) == float:
             score = '%.6f' % score
         else:
             score = str(score)
         score = score + ' ' * (15 - len(score))
         line = '{} \t|{}\t|{}\t|{}' \
-            .format(sid, name, score, team_rank)
+            .format(sid, name, score, rank)
         print(line)
-        team_rank += 1
 
 def main(ip, port, sid, token, problem):
     url = "http://%s:%s/jsonrpc" % (ip, port)
@@ -68,14 +64,14 @@ if __name__ == "__main__":
     #    Traffic_evaluate:       疫情人流量预测
     #    Mask_evaluate:          口罩检测    
 
-    problem = "Mask_evaluate"
+    problem = "FineGrainedCar_evaluate"
     # IP 固定为 115.236.52.125
     ip = "115.236.52.125"
     # 端口不需要修改
     port = "4000"
     # 改成你的学号
-    sid = "BY2110227"
+    sid = "TEAM_6"
     # 改成你的口令
-    token = "BY2110227"
+    token = "sdbxx1234"
 
     main(ip, port, sid, token, problem)

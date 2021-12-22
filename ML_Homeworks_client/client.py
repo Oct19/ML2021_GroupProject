@@ -61,9 +61,9 @@ if __name__ == "__main__":
     # 端口不需要修改
     port = "4000"
     # 改成你的学号
-    sid = "BY2110227"
+    sid = "BY3"
     # 改成你的口令
-    token = "BY2110227"
+    token = "123456"
 
     if problem in ["Action_evaluate",
                    'FoodPredict_evaluate',
