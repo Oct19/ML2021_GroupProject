@@ -8,9 +8,9 @@
 
 ## Client reg_info
 
-sid: TEAM_6
-name: 深度不学习
-token: sdbxx1234
+- sid: TEAM_6
+- name: 深度不学习
+- token: sdbxx1234
 
 ## How to use
 
@@ -21,18 +21,22 @@ token: sdbxx1234
 
 ## Link
 
+GitHub
+
+<https://github.com/Oct19/ML2021_GroupProject>
+
 checkpoint.pth
-https://bhpan.buaa.edu.cn:443/link/EE2C3D55DAB215748147605EBC13F932
+
+<https://bhpan.buaa.edu.cn:443/link/EE2C3D55DAB215748147605EBC13F932>
 有效期限：2022-01-07 23:59
 
 car datasets
-http://ai.stanford.edu/~jkrause/cars/car_dataset.html
 
-GitHub
-https://github.com/Oct19/ML2021_GroupProject
+<http://ai.stanford.edu/~jkrause/cars/car_dataset.html>
 
 网盘坚果云
-https://www.jianguoyun.com/p/DRekJhoQ6Ln_CRjbhp8E
+
+<https://www.jianguoyun.com/p/DRekJhoQ6Ln_CRjbhp8E>
 
 说明(by郭晨旭):原数据集没有划分验证集，我在训练集的基础上每一类取分出了6个样本用来验证。只用了剩下的数据来训练，并没有用到全体训练集来训练模型，如果全部用来训练的话，模型的性能应该还能再好一点。
 
