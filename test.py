@@ -46,17 +46,13 @@ def main():
     #test(val_loader, model)
 
 def test(model):
-    # create result file
-    result_filename = datetime.now().strftime('test_result_%Y_%m_%d_%H_%M.txt')
-    f = open(os.path.join('result/' ,result_filename),'w')
     predict_list = []
     model.eval()
     dataroot = 'datasets/stanford_cars/cars_test/'
-    datalist = open('datasets/stanford_cars/test_list.txt', 'r').readlines()
+    testimglist = os.listdir(dataroot)
     with torch.no_grad():
-        for ss in datalist[0:50]:
-            imgname = ss.split(' ')[0]
-            imgpath = dataroot + imgname
+        for imgname in testimglist:
+            imgpath = os.path.join(dataroot, imgname)
             img = default_loader(imgpath)
             img = transforms1(img)
             img = img.unsqueeze(0)
@@ -67,6 +63,9 @@ def test(model):
             print(f'{imgname} {predict}')
             predict_list.append(imgname+' '+str(predict)+'\n')
 
+    # create result file
+    result_filename = datetime.now().strftime('test_result_%Y_%m_%d_%H_%M.txt')
+    f = open(os.path.join('result/' ,result_filename),'w')
     f.writelines(predict_list)
     f.close()
 
@@ -97,5 +96,5 @@ def eval_with_txt():
     f.close()
 
 if __name__ == '__main__':
-    # main()
+    main()
     eval_with_txt()

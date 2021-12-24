@@ -1,3 +1,6 @@
+# temporary testing files
+temp.py
+
 # Datasets
 datasets/stanford_cars/cars_test
 datasets/stanford_cars/cars_train
@@ -60,7 +63,6 @@ coverage.xml
 *.pot
 
 # Django stuff:
-*.log
 local_settings.py
 db.sqlite3
 
