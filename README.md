@@ -27,8 +27,9 @@ GitHub
 
 checkpoint.pth
 
-<https://bhpan.buaa.edu.cn:443/link/EE2C3D55DAB215748147605EBC13F932>
-有效期限：2022-01-07 23:59
+<https://bhpan.buaa.edu.cn:443/link/ED0AE3E27FC95C7BD3A22CA9808E0272>
+
+有效期限：2022-01-27 23:59
 
 car datasets
 
@@ -37,8 +38,6 @@ car datasets
 网盘坚果云
 
 <https://www.jianguoyun.com/p/DRekJhoQ6Ln_CRjbhp8E>
-
-说明(by郭晨旭):原数据集没有划分验证集，我在训练集的基础上每一类取分出了6个样本用来验证。只用了剩下的数据来训练，并没有用到全体训练集来训练模型，如果全部用来训练的话，模型的性能应该还能再好一点。
 
 <h1 align="center"><img src="https://placekitten.com/800/250"/></h1>
 
